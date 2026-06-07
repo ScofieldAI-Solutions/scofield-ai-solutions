@@ -24,7 +24,7 @@ MVP de um assistente pessoal extensivel. Ele roda localmente, guarda memoria, cr
 Link direto:
 
 ```text
-https://cdn.jsdelivr.net/gh/Luisfvsc/scofield-ai-solutions@main/public/index.html
+https://raw.githack.com/Luisfvsc/scofield-ai-solutions/main/public/index.html
 ```
 
 Ou, se o GitHub Pages estiver ativado:
