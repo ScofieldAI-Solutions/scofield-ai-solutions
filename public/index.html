@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scofield AI Solutions</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="shell" aria-label="Scofield AI Research Console">
+        <aside class="panel">
+          <div class="brand">
+            <div class="mark" aria-hidden="true">SA</div>
+            <div>
+              <p class="eyebrow">Scofield AI Solutions</p>
+              <h1>Research Console</h1>
+            </div>
+          </div>
+
+          <div class="status">
+            <span class="dot"></span>
+            <span id="mode">Modo local ativo</span>
+          </div>
+
+          <div class="command-block">
+            <h2>Operacoes</h2>
+            <div class="tools">
+              <button data-prompt="pesquisar tudo inteligencia artificial no brasil">Pesquisa Total</button>
+              <button data-prompt="deepsearch cancer immunotherapy">DeepSearch</button>
+              <button data-prompt="buscar memoria rotina">Memoria</button>
+              <button data-prompt="documentos">Documentos</button>
+              <button data-prompt="resumir documento exemplo">Resumo</button>
+              <button data-prompt="tarefa organizar meu plano da semana">Tarefas</button>
+              <button data-prompt="wikidata Brasil">Wikidata</button>
+              <button data-prompt="worldbank BR NY.GDP.MKTP.CD">World Bank</button>
+              <button data-action="export">Exportar</button>
+              <button data-action="clear-chat">Limpar</button>
+            </div>
+          </div>
+
+          <div class="connectors">
+            <h2>Fontes</h2>
+            <ul id="connectors"></ul>
+          </div>
+
+          <div class="importer">
+            <h2>Arquivos</h2>
+            <label class="file-button">
+              <input id="file-input" type="file" accept=".txt,.md,.json,.csv,text/plain,text/markdown,application/json,text/csv" />
+              Importar documento
+            </label>
+            <p id="import-status">Leitura somente sob selecao manual.</p>
+          </div>
+
+          <div class="memory">
+            <h2>Memoria</h2>
+            <pre id="memory">Carregando...</pre>
+          </div>
+        </aside>
+
+        <section class="chat">
+          <header class="topbar">
+            <div>
+              <p class="eyebrow">Enterprise AI Research</p>
+              <h2>Scofield Intelligence Desk</h2>
+            </div>
+            <div class="top-actions">
+              <span>Live Sources</span>
+              <span>Local Memory</span>
+            </div>
+          </header>
+
+          <div id="messages" class="messages"></div>
+
+          <form id="form" class="composer">
+            <input
+              id="input"
+              autocomplete="off"
+              placeholder="Pesquise qualquer tema, consulte documentos ou acione a Pesquisa Total..."
+            />
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
